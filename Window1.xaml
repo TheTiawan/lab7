@@ -1,0 +1,22 @@
+﻿<Window x:Class="lab6.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab6"
+        mc:Ignorable="d"
+        Title="Window1" Height="250" Width="320" Background="Black" ResizeMode="NoResize">
+    <Grid>
+        <TextBox  ToolTip="1-й катет" HorizontalAlignment="Left" Margin="25,40,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Black" Foreground="White" FontWeight="Bold" x:Name="FirstCathet"/>
+        <TextBox  ToolTip="2-й катет" HorizontalAlignment="Left" Margin="25,65,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Black" Foreground="White" FontWeight="Bold" x:Name="SecondCathet"/>
+        <TextBox  IsReadOnly="True" ToolTip="Гипотенуза" HorizontalAlignment="Left" Margin="25,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Black" Foreground="White" FontWeight="Bold" x:Name="Hypotenuse"/>
+        <TextBox  IsReadOnly="True" ToolTip="Площадь" HorizontalAlignment="Left" Margin="175,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Black" Foreground="White" FontWeight="Bold" x:Name="Square"/>
+        <Menu Background="Transparent" VerticalAlignment="Top">
+            <MenuItem Header="О программе" Foreground="White" Background="Black" Click="AboutProgramClick"/>
+            <MenuItem Header="Выход" Foreground="White" Background="Black" Click="ExitClick"/>
+            <MenuItem Header="Пары" Foreground="White" Background="Black" Click="MenuItem_Click"/>
+        </Menu>
+        <Button ToolTip="Значения катетов должны быть четными"  Background="black" Foreground="White" Content="Рассчитать гипотенузу" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top" Width="135" Click="HypotenuseCountClick" />
+        <Button ToolTip="Значения катетов должны быть четными"  Background="black" Foreground="White"  Content="Рассчитать площадь" HorizontalAlignment="Left" Margin="25,165,0,0" VerticalAlignment="Top" Width="135" Click="SquareCountClick" />
+    </Grid>
+</Window>
